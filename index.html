@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculate Your BMI</title>
+</head>
+<body>
+    <!-- Container -->
+    <div class="container w-50">
+        <!-- Asking The Weight & Height -->
+        <div class="form-container">
+            <h1 class="text-center pb-2">Calculate Your BMI!</h1>
+            <form class="mt-4">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Your Weight(Kg)</label>
+                  <input type="number" step="any" required class="form-control" id="weight"  placeholder="Specify Your Weight in kg Here...">
+                </div>
+                <div class="form-group">
+                  <label for="height">Your Height(m)</label>
+                  <input type="number" step="any" required class="form-control" id="height" placeholder="Specify Your Height in metre Here...">
+                </div>
+                <button type="submit" class="btn btn-dark">Submit</button>
+              </form>
+        </div>
+        <!-- Result Display -->
+        <div class="result-container text-center" hidden>
+            <h1>Congrats! Your BMI is,</h1>
+            <div id="result"></div>
+            <button class="btn btn-dark" id="again-btn">Test Again</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
